@@ -1,0 +1,20 @@
+width: 9
+height: 9
+columns: 1
+pngOut: ../src/resources/web_root/img/food-half.png
+ftlOut: '-'
+
+classes:
+    - mcjar:
+        baseSrc: %appdata%/.minecraft/bin/minecraft.jar|
+    - icons:
+        class: mcjar
+        width: 9
+        height: 9
+        src: gui/icons.png
+      
+sprites:
+    - halfFood:
+        - {class: icons, x: 16, y: 27, process: hflip }
+        - {class: icons, x: 61, y: 27, process: hflip }
+    

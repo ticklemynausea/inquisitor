@@ -1,0 +1,72 @@
+
+TODO:
+* Add mob icons to player page? And inventory icons for weapons?
+* Add multi-column sort to players list
+* Add public API for stats submission
+* Better pagination control
+* Make all object stats optional via config and change web view to match
+* Add 'add' and 'remove' commands for setting webserver playerColumns
+
+* Add option to regex filter player's by name for no stats collection
+
+
+
+Test:
+
+Change Log:
+* Updated for CB 1.5.1 dev.
+* Dropped "compatibility" classes for older versions of Bukkit.
+* Inventory stored in the DB no longer stores NBT tags.
+* Added players option "invalidPlayerNamePattern".
+
+
+
+
+Wiki Updates:
+
+Change connection URL to?: jdbc:mysql://localhost:3306/<database name>?autoReconnect=true
+
+
+* More stats
+    * farthest kill distance by arrow with timestamp
+    * longest life span, average life span
+    * total time on fire
+    * how many broken tools and what types (HandToolBreakEvent)
+
+
+* Connect to popular global ban lists?
+* Provide ban/whitelist checking via API.
+
+* servers table:
+    * Insert/update server record when server starts
+    * Periodically update server record
+    * name
+    * MC address(es)
+    * started
+    * stopped
+    * lastSeen
+    * player count
+    * maximum players
+    * maximim players timestamp
+    * loaded worlds
+    * other server properties like game mode, PVP, spawn monsters?
+
+* bannedPlayers table
+    * name
+    * added timestamp
+    * login attempts
+    * last login attempt timestamp
+
+* bannedIPs table
+    * address
+    * added timestamp
+    * login attempts
+    * last login attempt timestamp
+
+* whitelistedPlayers table
+    * name
+    * added timestamp
+    * logins
+    * last login timestamp
+
+

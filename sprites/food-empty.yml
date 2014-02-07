@@ -1,0 +1,17 @@
+width: 9
+height: 9
+columns: 1
+pngOut: ../src/resources/web_root/img/food-empty.png
+ftlOut: '-'
+
+classes:
+    - mcjar:
+        baseSrc: %appdata%/.minecraft/bin/minecraft.jar|
+    - icons:
+        class: mcjar
+        width: 9
+        height: 9
+        src: gui/icons.png
+      
+sprites:
+    - emptyFood: { class: icons, x: 16, y: 27, process: hflip }

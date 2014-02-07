@@ -1,0 +1,769 @@
+width: 32
+height: 32
+columns: 16
+pngOut: ../src/resources/web_root/img/sprites.png
+ftlOut: ../src/resources/web_root/resources/spriteData.ftl
+ftlVar: sprites
+tags:
+    - name
+    
+classes:
+    - wiki:
+        baseSrc: http://media-mcw.cursecdn.com
+    - mcjar:
+        baseSrc: %appdata%/.minecraft/bin/minecraft.jar|
+    - items:
+        class: mcjar
+        width: 16
+        height: 16
+        baseSrc: '%baseSrc%textures/items/'
+    - blocks:
+        class: mcjar
+        width: 16
+        height: 16
+        baseSrc: '%baseSrc%textures/blocks/'
+    - icons:
+        class: mcjar
+        width: 9
+        height: 9
+        src: gui/icons.png
+    - iconOverlay:
+        dst: { width: 18, height: 18, top: 2, left: 2, bottom: 2, right: 2 }
+      
+buffers:
+    - defaultEgg:
+        - { class: items, src: monsterPlacer.png }
+        - { class: items, src: monsterPlacer_overlay.png }
+
+sprites:
+    # ===========================================================================
+    # Blocks
+    # ===========================================================================
+    
+    - 1-0: { class: wiki, src: /d/d4/Stone.png, name: Stone }
+    - 2-0: { class: wiki, src: /c/c5/Grass.png, name: Grass }
+    - 3-0: { class: wiki, src: /2/2f/Dirt.png, name: Dirt }
+    - 4-0: { class: wiki, src: /6/67/Cobblestone.png, name: Cobblestone }
+    - 5-0: { class: wiki, src: /8/83/Wooden_Planks.gif!0, name: Oak Planks }
+    - 5-1: { class: wiki, src: /8/83/Wooden_Planks.gif!1, name: Pine Planks }
+    - 5-2: { class: wiki, src: /8/83/Wooden_Planks.gif!2, name: Birch Planks }
+    - 5-3: { class: wiki, src: /8/83/Wooden_Planks.gif!3, name: Redwood Planks }
+    - 6-0: { class: blocks, src: sapling.png, name: Oak Sapling }
+    - 6-1: { class: blocks, src: sapling_spruce.png, name: Pine Sapling }
+    - 6-2: { class: blocks, src: sapling_birch.png, name: Birch Sapling }
+    - 6-3: { class: blocks, src: sapling_jungle.png, name: Redwood Sapling }
+    - 7-0: { class: wiki, src: /e/ee/Bedrock.png, name: Bedrock }
+    - 8-0: { class: wiki, src: /9/9d/Water.png, name: Water }
+    - 9-0: { class: wiki, src: /9/9d/Water.png, name: Stationairy Water }
+    - 10-0: { class: wiki, src: /2/27/Lava.png, name: Lava }
+    - 11-0: { class: wiki, src: /2/27/Lava.png, name: Stationary Lava }
+    - 12-0: { class: wiki, src: /a/a7/Sand.png, name: Sand }
+    - 13-0: { class: wiki, src: /9/9a/Gravel.png, name: Gravel }
+    - 14-0: { class: wiki, src: /3/39/Gold_%28Ore%29.png, name: Gold Ore }
+    - 15-0: { class: wiki, src: /a/a8/Iron_%28Ore%29.png, name: Iron Ore }
+    - 16-0: { class: wiki, src: /4/40/Coal_%28Ore%29.png, name: Coal Ore }
+    - 17-0: { class: wiki, src: /7/79/WoodAnimation.gif!0, name: Oak Wood }
+    - 17-1: { class: wiki, src: /7/79/WoodAnimation.gif!1, name: Pine Wood }
+    - 17-2: { class: wiki, src: /7/79/WoodAnimation.gif!2, name: Birch Wood }
+    - 17-3: { class: wiki, src: /7/79/WoodAnimation.gif!3, name: Redwood Wood }
+    - 18-0: { class: wiki, src: /7/7b/Leaves.gif!0, name: Oak Leaves }
+    - 18-1: { class: wiki, src: /7/7b/Leaves.gif!1, name: Pine Leaves }
+    - 18-2: { class: wiki, src: /7/7b/Leaves.gif!2, name: Birch Leaves }
+    - 18-3: { class: wiki, src: /7/7b/Leaves.gif!3, name: Redwood Leaves }
+    - 19-0: { class: wiki, src: /a/a0/Sponge.png, name: Sponge }
+    - 20-0: { class: wiki, src: /1/15/Glass.png, name: Glass }
+    - 21-0: { class: wiki, src: /c/cf/Lapis_Lazuli_%28Ore%29.png, name: Lapis Lazuli Ore }
+    - 22-0: { class: wiki, src: /5/5e/Lapis_Lazuli_%28Block%29.png, name: Lapis Lazuli Block }
+    - 23-0: { class: wiki, src: /a/a6/Dispenser.png, name: Dispenser }
+    - 24-0: { class: wiki, src: /d/da/Sandstone.gif!0, name: Normal Sandstone }
+    - 24-1: { class: wiki, src: /d/da/Sandstone.gif!1, name: Chiseled Sandstone }
+    - 24-2: { class: wiki, src: /d/da/Sandstone.gif!2, name: Smooth Sandstone }
+    - 25-0: { class: wiki, src: /9/9b/Note_Block.png, name: Note Block }
+    - 26-0: { class: wiki, src: /c/c5/Bed.png, name: Bed }
+    - 27-0: { class: blocks, src: goldenRail_powered.png, name: Powered Rail }
+    - 28-0: { class: blocks, src: detectorRail.png, name: Detector Rail }
+    - 29-0: { class: wiki, src: /e/e1/Sticky_Piston.png, name: Sticky Piston }
+    - 30-0: { class: blocks, src: web.png, name: Cobweb }
+    - 31-0: { class: wiki, src: /3/34/TallGrass.gif!0, name: Dead Shrub }
+    - 31-1: { class: wiki, src: /3/34/TallGrass.gif!1, name: Tall Grass }
+    - 31-2: { class: wiki, src: /3/34/TallGrass.gif!2, name: Fern }
+    - 32-0: { class: wiki, src: /1/1f/Dead_Bush.png, name: Dead Bush }
+    - 33-0: { class: wiki, src: /6/62/Piston.png, name: Piston }
+    - 34-0: { class: wiki, src: /e/ea/Block_34.png, name: Piston Extension }
+    - 35-0: { class: wiki, src: /2/28/Wool.gif!0, name: White Wool }
+    - 35-1: { class: wiki, src: /2/28/Wool.gif!1, name: Orange Wool }
+    - 35-2: { class: wiki, src: /2/28/Wool.gif!2, name: Magenta Wool }
+    - 35-3: { class: wiki, src: /2/28/Wool.gif!3, name: Light Blue Wool }
+    - 35-4: { class: wiki, src: /2/28/Wool.gif!4, name: Yellow Wool }
+    - 35-5: { class: wiki, src: /2/28/Wool.gif!5, name: Lime Wool }
+    - 35-6: { class: wiki, src: /2/28/Wool.gif!6, name: Pink Wool }
+    - 35-7: { class: wiki, src: /2/28/Wool.gif!7, name: Gray Wool }
+    - 35-8: { class: wiki, src: /2/28/Wool.gif!8, name: Light Gray Wool }
+    - 35-9: { class: wiki, src: /2/28/Wool.gif!9, name: Cyan Wool }
+    - 35-10: { class: wiki, src: /2/28/Wool.gif!10, name: Purple Wool }
+    - 35-11: { class: wiki, src: /2/28/Wool.gif!11, name: Blue Wool }
+    - 35-12: { class: wiki, src: /2/28/Wool.gif!12, name: Brown Wool }
+    - 35-13: { class: wiki, src: /2/28/Wool.gif!13, name: Green Wool }
+    - 35-14: { class: wiki, src: /2/28/Wool.gif!14, name: Red Wool }
+    - 35-15: { class: wiki, src: /2/28/Wool.gif!15, name: Black Wool }
+    - 36-0: { class: wiki, src: /8/84/Technical_blocks.png, name: Moved Block }
+    - 37-0: { class: blocks, src: flower.png, name: Dandelion }
+    - 38-0: { class: blocks, src: rose.png, name: Rose }
+    - 39-0: { class: blocks, src: mushroom_brown.png, name: Brown Mushroom }
+    - 40-0: { class: blocks, src: mushroom_red.png, name: Red Mushroom }
+    - 41-0: { class: wiki, src: /5/57/Gold_%28Block%29.png, name: Gold Block }
+    - 42-0: { class: wiki, src: /1/18/Iron_%28Block%29.png, name: Iron Block }
+    
+    - 43-0: { class: wiki, src: /1/16/Single_Double_Slabs.gif!0, x: 0, y: 130, width: 150, height: 150, name: Double Stone Slab }
+    - 43-1: { class: wiki, src: /1/16/Single_Double_Slabs.gif!1, x: 0, y: 130, width: 150, height: 150, name: Double Sandstone Slab }
+    - 43-2: { class: wiki, src: /1/16/Single_Double_Slabs.gif!2, x: 0, y: 130, width: 150, height: 150, name: Double Wooden Stone Slab }
+    - 43-3: { class: wiki, src: /1/16/Single_Double_Slabs.gif!3, x: 0, y: 130, width: 150, height: 150, name: Double Cobblestone Slab }
+    - 43-4: { class: wiki, src: /1/16/Single_Double_Slabs.gif!4, x: 0, y: 130, width: 150, height: 150, name: Double Brick Slab }
+    - 43-5: { class: wiki, src: /1/16/Single_Double_Slabs.gif!5, x: 0, y: 130, width: 150, height: 150, name: Double Stone Brick Slab }
+    - 43-6: { class: wiki, src: /6/62/Nether_Brick.png, name: Double Nether Brick Slab }
+    - 43-7: { class: wiki, src: /d/df/Block_of_Nether_Quartz.png, name: Double Quartz Slab }
+#    - 43-8: { class: wiki, src: /1/16/Single_Double_Slabs.gif!5, x: 0, y: 130, width: 150, height: 150, name: Double Smooth Stone Slab }
+#    - 43-9: { class: wiki, src: /1/16/Single_Double_Slabs.gif!5, x: 0, y: 130, width: 150, height: 150, name: Double Smooth Sandstone Slab }
+    
+    - 44-0: { class: wiki, src: /1/16/Single_Double_Slabs.gif!0, x: 0, y: 0, width: 150, height: 130, name: Stone Slab }
+    - 44-1: { class: wiki, src: /1/16/Single_Double_Slabs.gif!1, x: 0, y: 0, width: 150, height: 130, name: Sandstone Slab }
+    - 44-2: { class: wiki, src: /1/16/Single_Double_Slabs.gif!2, x: 0, y: 0, width: 150, height: 130, name: Wooden Stone Slab }
+    - 44-3: { class: wiki, src: /1/16/Single_Double_Slabs.gif!3, x: 0, y: 0, width: 150, height: 130, name: Cobblestone Slab }
+    - 44-4: { class: wiki, src: /1/16/Single_Double_Slabs.gif!4, x: 0, y: 0, width: 150, height: 130, name: Brick Slab }
+    - 44-5: { class: wiki, src: /1/16/Single_Double_Slabs.gif!5, x: 0, y: 0, width: 150, height: 130, name: Stone Brick Slab }
+    - 44-6: { class: wiki, src: /5/52/Nether_Brick_Slab.png, name: Nether Brick Slab }
+    - 44-7: { class: wiki, src: /5/5e/Quartz_Slab.png, name: Quartz Slab }
+    
+    - 45-0: { class: wiki, src: /0/00/Brick_%28Block%29.png, name: Bricks }
+    - 46-0: { class: wiki, src: /1/1e/TNT.png, name: TNT }
+    - 47-0: { class: wiki, src: /f/f7/Bookshelf.png, name: Bookshelf }
+    - 48-0: { class: wiki, src: /1/12/Moss_Stone.png, name: Mossy Cobblestone }
+    - 49-0: { class: wiki, src: /2/23/Obsidian.png, name: Obsidian }
+    - 50-0: { class: blocks, src: torch.png, name: Torch }
+    - 51-0: { class: wiki, src: /3/30/Fire.png, name: Fire }
+    - 52-0: { class: wiki, src: /2/2d/Monster_Spawner.png, name: Spawner }
+    - 53-0: { class: wiki, src: /f/f9/Stairs.gif!0, name: Wooden Stairs }
+    - 54-0: { class: wiki, src: /b/b3/Chest.png, name: Chest }
+    - 55-0: { class: wiki, src: /1/18/Redstone_%28Wire%2CInventory%29.png, name: Redstone Wire }
+    - 56-0: { class: wiki, src: /9/9d/Diamond_%28Ore%29.png, name: Diamond Ore }
+    - 57-0: { class: wiki, src: /d/d0/Diamond_%28Block%29.png, name: Diamond Block }
+    - 58-0: { class: wiki, src: /d/d4/Crafting_Table.png, name: Crafting Table }
+    - 59-0: { class: items, src: seeds.png, name: Wheat Seeds }
+    - 60-0: { class: wiki, src: /a/ad/Farmland.png, name: Farmland }
+    - 61-0: { class: wiki, src: /0/0f/Furnace.png, name: Furnace }
+    - 62-0: { class: wiki, src: /4/4b/Furnace_%28Active%29.png, name: Burning Furnace }
+    - 63-0: { class: items, src: sign.png, name: Sign Post }
+    - 64-0: { class: items, src: doorWood.png, name: Wooden Door }
+    - 65-0: { class: blocks, src: ladder.png, name: Ladder }
+    - 66-0: { class: blocks, src: rail.png, name: Rail }
+    - 67-0: { class: wiki, src: /f/f9/Stairs.gif!4, name: Cobblestone Stairs }
+    - 68-0: { class: wiki, src: /c/cc/Wall_Sign.png, name: Wall Sign }
+    - 69-0: { class: wiki, src: /c/c6/Lever.png, name: Lever }
+    - 70-0: { class: wiki, src: /a/a4/Stone_Pressure_Plate.png, name: Stone Pressure Plate }
+    - 71-0: { class: items, src: doorIron.png, name: Iron Door }
+    - 72-0: { class: wiki, src: /e/ec/Wooden_Pressure_Plate.png, name: Wooden Pressure Plate }
+    - 73-0: { class: wiki, src: /9/9f/Redstone_%28Ore%29.png, name: Redstone Ore }
+    - 74-0: { class: wiki, src: /9/9f/Redstone_%28Ore%29.png, name: Glowing Redstone Ore }
+    - 75-0: { class: blocks, src: redtorch.png, name: Redstone Torch Off }
+    - 76-0: { class: blocks, src: redtorch_lit.png, name: Redstone Torch On }
+    - 77-0: { class: wiki, src: /c/c0/Stone_Button.png, name: Stone Button }
+    - 78-0: { class: wiki, src: /4/4e/Snow.png, name: Snow }
+    - 79-0: { class: wiki, src: /7/77/Ice.png, name: Ice }
+    - 80-0: { class: wiki, src: /2/21/Snow_%28Block%29.png, name: Snow Block }
+    - 81-0: { class: wiki, src: /a/a6/Cactus.png, name: Cactus }
+    - 82-0: { class: wiki, src: /f/f6/Clay_%28Block%29.png, name: Clay Block }
+    - 83-0: { class: wiki, src: /6/67/Sugar_Cane.png, name: Sugar Cane }
+    - 84-0: { class: wiki, src: /6/65/Jukebox.png, name: Jukebox }
+    - 85-0: { class: wiki, src: /2/29/Fence.png, name: Fence }
+    - 86-0: { class: wiki, src: /6/64/Pumpkin.png, name: Pumpkin }
+    - 87-0: { class: wiki, src: /7/72/Netherrack.png, name: Netherrack }
+    - 88-0: { class: wiki, src: /a/a7/Soul_Sand.png, name: Soul Sand }
+    - 89-0: { class: wiki, src: /6/63/Glowstone_%28Block%29.png, name: Glowstone Block }
+    - 90-0: { class: wiki, src: /9/9d/Portal.png, name: Portal }
+    - 91-0: { class: wiki, src: /1/17/Jack-O-Lantern.png, name: Jack-O-Lantern }
+    - 92-0: { class: wiki, src: /f/f0/Cake.png, name: Cake Block }
+    - 93-0: { class: wiki, src: /b/b0/Redstone_%28Repeater%2C_Inactive%29.png, name: Redstone Repeater Off }
+    - 94-0: { class: wiki, src: /0/0f/Redstone_%28Repeater%2C_Active%29.png, name: Redstone Repeater On }
+    - 95-0: { class: wiki, src: /d/d4/Locked_Chest.png, name: Locked Chest }
+    - 96-0: { class: wiki, src: /9/94/Trapdoor.png, name: Trapdoor }
+    - 97-0: { class: wiki, src: /d/d4/Stone.png, name: Silverfish Stone }
+    - 97-1: { class: wiki, src: /6/67/Cobblestone.png, name: Silverfish Cobblestone }
+    - 97-2: { class: wiki, src: /6/6d/Stone_Brick.png, name: Silverfish Stone Brick }
+    - 98-0: { class: wiki, src: /5/56/Stone_Bricks.gif!0, name: Normal Stone Bricks }
+    - 98-1: { class: wiki, src: /5/56/Stone_Bricks.gif!1, name: Mossy Stone Bricks }
+    - 98-2: { class: wiki, src: /5/56/Stone_Bricks.gif!2, name: Cracked Stone Bricks }
+    - 98-3: { class: wiki, src: /5/56/Stone_Bricks.gif!3, name: Chiseled Stone Bricks }
+    - 99-0: { class: wiki, src: /9/9e/Huge_Brown_Mushroom.png, name: Huge Brown Mushroom }
+    - 100-0: { class: wiki, src: /c/c9/Huge_Red_Mushroom.png, name: Huge Red Mushroom }
+    - 101-0: { class: wiki, src: /f/f5/Iron_Bars.png, name: Iron Bars }
+    - 102-0: { class: wiki, src: /f/fc/Glass_Pane.png, name: Glass Pane }
+    - 103-0: { class: wiki, src: /2/2a/Melon_%28Block%29.png, name: Melon }
+    - 104-0: { class: wiki, src: /7/7c/Seed_Stem.png, name: Pumpkin Stem }
+    - 105-0: { class: wiki, src: /7/7c/Seed_Stem.png, name: Melon Stem }
+    - 106-0: { class: wiki, src: /f/ff/Vine.png, name: Vines }
+    - 107-0: { class: wiki, src: /6/62/Fence_Gate_%28Closed%29.png, name: Fence Gate }
+    - 108-0: { class: wiki, src: /f/f9/Stairs.gif!5, name: Brick Stairs }
+    - 109-0: { class: wiki, src: /f/f9/Stairs.gif!6, name: Stone Brick Stairs }
+    - 110-0: { class: wiki, src: /1/15/Mycelium.png, name: Mycelium }
+    - 111-0: { class: wiki, src: /4/43/Lily_Pad.png, name: Lily Pad }
+    - 112-0: { class: wiki, src: /6/62/Nether_Brick.png, name: Nether Brick }
+    - 113-0: { class: wiki, src: /3/30/Nether_Brick_Fence.png, name: Nether Brick Fence }
+    - 114-0: { class: wiki, src: /f/f9/Stairs.gif!7, name: Nether Brick Stairs }
+    - 115-0: { class: wiki, src: /4/43/Nether_Wart.png, name: Nether Wart }
+    - 116-0: { class: wiki, src: /c/ca/Enchantment_Table.png, name: Enchanctment Table }
+    - 117-0: { class: wiki, src: /f/fa/Brewing_Stand.png, name: Brewing Stand }
+    - 118-0: { class: items, src: cauldron.png, name: Cauldron }
+    - 119-0: { class: wiki, src: /7/70/End_Portal.png, name: End Portal }
+    - 120-0: { class: wiki, src: /5/56/End_Portal_Frame.png, name: End Portal Frame }
+    - 121-0: { class: wiki, src: /0/06/End_Stone.png, name: End Stone }
+    - 122-0: { class: wiki, src: /0/0b/Dragon_Egg.png, name: Dragon Egg }
+    - 123-0: { class: wiki, src: /5/54/Redstone_Lamp.png, name: Redstone Lamp Off }
+    - 124-0: { class: wiki, src: /a/a8/Redstone_Lamp_%28Active%29.png, name: Redstone Lamp On }
+    - 125-0: { class: wiki, src: /0/04/Single_Double_Slabswooden.gif!0, x: 0, y: 130, width: 150, height: 150, name: Double Oak Slab }
+    - 125-1: { class: wiki, src: /0/04/Single_Double_Slabswooden.gif!1, x: 0, y: 130, width: 150, height: 150, name: Double Pine Slab }
+    - 125-2: { class: wiki, src: /0/04/Single_Double_Slabswooden.gif!2, x: 0, y: 130, width: 150, height: 150, name: Double Brich Slab }
+    - 125-3: { class: wiki, src: /0/04/Single_Double_Slabswooden.gif!3, x: 0, y: 130, width: 150, height: 150, name: Double Redwood Slab }
+    - 126-0: { class: wiki, src: /0/04/Single_Double_Slabswooden.gif!0, x: 0, y: 0, width: 150, height: 130, name: Oak Slab }
+    - 126-1: { class: wiki, src: /0/04/Single_Double_Slabswooden.gif!1, x: 0, y: 0, width: 150, height: 130, name: Pine Slab }
+    - 126-2: { class: wiki, src: /0/04/Single_Double_Slabswooden.gif!2, x: 0, y: 0, width: 150, height: 130, name: Birch Slab }
+    - 126-3: { class: wiki, src: /0/04/Single_Double_Slabswooden.gif!3, x: 0, y: 0, width: 150, height: 130, name: Redwood Slab }
+    - 127-0: { class: wiki, src: /a/ad/Cocoa_Plant.png, name: Cocoa Plant }
+    - 128-0: { class: wiki, src: /f/f9/Stairs.gif!8, name: Sandstone Stairs }
+    - 129-0: { class: wiki, src: /3/3d/Emerald_Ore2.png, name: Emerald Ore }
+    - 130-0: { class: wiki, src: /f/f0/Ender_Chest.png, name: Ender Chest }
+    - 131-0: { class: wiki, src: /c/c0/Tripwire_Hook.png, name: Tripwire Hook }
+    - 132-0: { class: wiki, src: /f/fa/Tripwire.png, name: Tripwire }
+    - 133-0: { class: wiki, src: /7/7d/Block_of_Emerald.png, name: Emerald Block }
+    - 134-0: { class: wiki, src: /f/f9/Stairs.gif!1, name: Pine Wooden Stairs }
+    - 135-0: { class: wiki, src: /f/f9/Stairs.gif!2, name: Birch Wooden Stairs }
+    - 136-0: { class: wiki, src: /f/f9/Stairs.gif!3, name: Redwood Wooden Stairs }
+
+    - 137-0: { class: wiki, src: /8/8a/Adventure_Mode_Control_Block.png, name: Command }
+    - 138-0: { class: wiki, src: /2/20/Beacon_Block.png, name: Beacon }
+    - 139-0: { class: wiki, src: /b/b7/Cobblestone_Wall.png, name: Cobblestone Wall }
+    - 139-0: { class: wiki, src: /7/79/Mossy_Cobblestone_Wall.png, name: Mossy Cobblestone Wall }
+    - 140-0: { class: wiki, src: /c/cc/Flower_Pot.png, name: Flower Pot }
+    - 141-0: { class: wiki, src: /2/21/Carrot-animated.gif!3 , dst: { top: 10 }, name: Carrot }
+    - 142-0: { class: wiki, src: /a/aa/Potato-animated.gif!3, name: Potato }
+    - 143-0: { class: wiki, src: /f/f1/Wooden_Button.png, name: Wood Button }
+    - 144-0: { class: wiki, src: /9/9c/Skeleton_Skull.png, name: Skeleton Head }
+    - 144-0: { class: wiki, src: /a/ac/Wither_Skeleton_Skull.png, name: Wither Skeleton Head }
+    - 144-0: { class: wiki, src: /f/f8/Zombie_Head.png, name: Zombie Head }
+    - 144-0: { class: wiki, src: /5/51/Head.png, name: Human Head }
+    - 144-0: { class: wiki, src: /9/97/Creeper_Head.png, name: Creeper Head }
+    - 145-0: { class: wiki, src: /d/dd/Anvil.png, name: Anvil }
+    
+    - 146-0: { class: wiki, src: /0/07/Trapped_Chest.png, name: Trapped Chest }
+    - 147-0: { class: wiki, src: /e/eb/Weighted_Pressure_Plate_%28Light%29.png, name: Light Plate }
+    - 148-0: { class: wiki, src: /4/45/Weighted_Pressure_Plate_%28Heavy%29.png, name: Heavy Plate }
+    - 149-0: { class: wiki, src: /5/53/Redstone_Comparator_%28Inactive%29.gif!0, name: Redstone Comparator Off }
+    - 150-0: { class: wiki, src: /e/ea/Redstone_Comparator_%28Active%29.gif!0, name: Redstone Comparator On }
+    - 151-0: { class: wiki, src: /4/49/Daylight_Detector.png, name: Daylight Sensor }
+    - 152-0: { class: wiki, src: /9/9d/Block_of_Redstone.png, name: Redstone Block }
+    - 153-0: { class: wiki, src: /3/39/Nether_Quartz_Ore.png, name: Quartz Ore }
+    - 154-0: { class: wiki, src: /8/81/Hopper.png, name: Hopper }
+    - 155-0: { class: wiki, src: /d/df/Block_of_Nether_Quartz.png, name: Quartz Block }
+    - 155-1: { class: wiki, src: /f/f4/Block_of_Chiseled_Nether_Quartz.png, name: Chiseled Quartz Block }
+    - 155-2: { class: wiki, src: /f/ff/Block_of_Lines_Nether_Quartz.png, name: Quartz Pillar Block }
+    - 155-3: { class: wiki, src: /f/ff/Block_of_Lines_Nether_Quartz.png, name: Quartz Pillar Block }
+    - 155-4: { class: wiki, src: /f/ff/Block_of_Lines_Nether_Quartz.png, name: Quartz Pillar Block }
+    - 156-0: { class: wiki, src: /0/05/Quartz_Stairs.png, name: Quartz Stairs }
+    - 157-0: { class: wiki, src: /a/ae/ActivatorRail.gif!0, name: Activator Rail }
+    - 158-0: { class: wiki, src: /8/8d/Dropper.png, name: Dropper }
+    
+    
+    # ===========================================================================
+    # Items
+    # ===========================================================================
+    
+    - 256-0: {class: items, src: shovelIron.png, name: Iron Shovel }
+    - 257-0: {class: items, src: pickaxeIron.png, name: Iron Pickaxe }
+    - 258-0: {class: items, src: hatchetIron.png, name: Iron Axe }
+    - 259-0: {class: items, src: flintAndSteel.png, name: Flint and Steel }
+    - 260-0: {class: items, src: apple.png, name: Red Apple }
+    - 261-0: {class: items, src: bow.png, name: Bow }
+    - 262-0: {class: items, src: arrow.png, name: Arrow }
+    - 263-0: {class: items, src: coal.png, name: Coal }
+    - 263-1: {class: items, src: coal.png, name: Charcoal }
+    - 264-0: { class: items, src: diamond.png, name: Diamond }
+    - 265-0: { class: items, src: ingotIron.png, name: Iron Ingot }
+    - 266-0: { class: items, src: ingotGold.png, name: Gold Ingot }
+    - 267-0: { class: items, src: swordIron.png, name: Iron Sword }
+    - 268-0: { class: items, src: swordWood.png, name: Wooden Sword }
+    - 269-0: { class: items, src: shovelWood.png, name: Wooden Shovel }
+    - 270-0: { class: items, src: pickaxeWood.png, name: Wooden Pickaxe }
+    - 271-0: { class: items, src: hatchetWood.png, name: Wooden Axe }
+    - 272-0: { class: items, src: swordStone.png, name: Stone Sword }
+    - 273-0: { class: items, src: shovelStone.png, name: Stone Shovel }
+    - 274-0: { class: items, src: pickaxeStone.png, name: Stone Pickaxe }
+    - 275-0: { class: items, src: hatchetStone.png, name: Stone Axe }
+    - 276-0: { class: items, src: swordDiamond.png, name: Diamond Sword }
+    - 277-0: { class: items, src: shovelDiamond.png, name: Diamond Shovel }
+    - 278-0: { class: items, src: pickaxeDiamond.png, name: Diamond Pickaxe }
+    - 279-0: { class: items, src: hatchetDiamond.png, name: Diamond Axe }
+    - 280-0: { class: items, src: stick.png, name: Stick }
+    - 281-0: { class: items, src: bowl.png, name: Bowl }
+    - 282-0: { class: items, src: mushroomStew.png, name: Mushroom Soup }
+    - 283-0: { class: items, src: swordGold.png, name: Gold Sword }
+    - 284-0: { class: items, src: shovelGold.png, name: Gold Shovel }
+    - 285-0: { class: items, src: pickaxeGold.png, name: Gold Pickaxe }
+    - 286-0: { class: items, src: hatchetGold.png, name: Gold Axe }
+    - 287-0: { class: items, src: string.png, name: String }
+    - 288-0: { class: items, src: feather.png, name: Feather }
+    - 289-0: { class: items, src: sulphur.png, name: Gunpowder }
+    - 290-0: { class: items, src: hoeWood.png, name: Wooden Hoe }
+    - 291-0: { class: items, src: hoeStone.png, name: Stone Hoe }
+    - 292-0: { class: items, src: hoeIron.png, name: Iron Hoe }
+    - 293-0: { class: items, src: hoeDiamond.png, name: Diamond Hoe }
+    - 294-0: { class: items, src: hoeGold.png, name: Gold Hoe }
+    - 295-0: { class: items, src: seeds.png, name: Seeds }
+    - 296-0: { class: items, src: wheat.png, name: Wheat }
+    - 297-0: { class: items, src: bread.png, name: Bread }
+    - 298-0: {class: items, src: helmetCloth.png, name: Leather Cap }
+    - 299-0: {class: items, src: chestplateCloth.png, name: Leather Tunic }
+    - 300-0: {class: items, src: leggingsCloth.png, name: Leather Pants }
+    - 301-0: {class: items, src: bootsCloth.png, name: Leather Boots }
+    - 302-0: {class: items, src: helmetChain.png, name: Chain Helmet }
+    - 303-0: {class: items, src: chestplateChain.png, name: Chain Chestplate }
+    - 304-0: {class: items, src: leggingsChain.png, name: Chain Leggings }
+    - 305-0: {class: items, src: bootsChain.png, name: Chain Boots }
+    - 306-0: {class: items, src: helmetIron.png, name: Iron Helmet }
+    - 307-0: {class: items, src: chestplateIron.png, name: Iron Chestplate }
+    - 308-0: {class: items, src: leggingsIron.png, name: Iron Leggings }
+    - 309-0: {class: items, src: bootsIron.png, name: Iron Boots }
+    - 310-0: {class: items, src: helmetDiamond.png, name: Diamond Helmet }
+    - 311-0: {class: items, src: chestplateDiamond.png, name: Diamond Chestplate }
+    - 312-0: {class: items, src: leggingsDiamond.png, name: Diamond Leggings }
+    - 313-0: {class: items, src: bootsDiamond.png, name: Diamond Boots }
+    - 314-0: {class: items, src: helmetGold.png, name: Gold Helmet }
+    - 315-0: {class: items, src: chestplateGold.png, name: Gold Chestplate }
+    - 316-0: {class: items, src: leggingsGold.png, name: Gold Leggings }
+    - 317-0: {class: items, src: bootsGold.png, name: Gold Boots }
+    - 318-0: { class: items, src: flint.png, name: Flint }
+    - 319-0: { class: items, src: porkchopRaw.png, name: Raw Porkchop }
+    - 320-0: { class: items, src: porkchopCooked.png, name: Cooked Porkchop }
+    - 321-0: { class: items, src: painting.png, name: Painting }
+    - 322-0: { class: items, src: appleGold.png, name: Golden Apple }
+    - 323-0: { class: items, src: sign.png, name: Sign }
+    - 324-0: { class: items, src: doorWood.png, name: Wooden Door }
+    - 325-0: { class: items, src: bucket.png, name: Bucket }
+    - 326-0: { class: items, src: bucketWater.png, name: Water Bucket }
+    - 327-0: { class: items, src: bucketLava.png, name: Lava Bucket }
+    - 328-0: { class: items, src: minecart.png, name: Minecart }
+    - 329-0: { class: items, src: saddle.png, name: Saddle }
+    - 330-0: { class: items, src: doorIron.png, name: Iron Door }
+    - 331-0: { class: items, src: redstone.png, name: Redstone Dust }
+    - 332-0: { class: items, src: snowball.png, name: Snowball }
+    - 333-0: { class: items, src: boat.png, name: Boat }
+    - 334-0: { class: items, src: leather.png, name: Leather }
+    - 335-0: { class: items, src: milk.png, name: Milk }
+    - 336-0: { class: items, src: brick.png, name: Clay Brick }
+    - 337-0: { class: items, src: clay.png, name: Clay }
+    - 338-0: { class: items, src: reeds.png, name: Sugar Cane }
+    - 339-0: { class: items, src: paper.png, name: Paper }
+    - 340-0: { class: items, src: book.png, name: Book }
+        
+    - 341-0: { class: items, src: slimeball.png, name: Slimeball }
+    - 342-0: { class: items, src: minecartChest.png, name: Storage Minecart }
+    - 343-0: { class: items, src: minecartFurnace.png, name: Powered Minecart }
+    - 344-0: { class: items, src: egg.png, name: Chicken Egg }
+    - 345-0: { class: wiki, src: /9/92/Compass.png, name: Compass }
+    - 346-0: { class: items, src: fishingRod.png, name: Fishing Rod }
+    - 347-0: { class: wiki, src: /9/93/Watch.png, name: Clock }
+    - 348-0: { class: items, src: yellowDust.png, name: Glowstone Dust }
+    - 349-0: { class: items, src: fishRaw.png, name: Raw Fish }
+    - 350-0: { class: items, src: fishCooked.png, name: Cooked Fish }
+    - 351-0: { class: items, src: dyePowder_black.png, name: Ink Sac }
+    - 351-1: { class: items, src: dyePowder_red.png, name: Rose Red }
+    - 351-2: { class: items, src: dyePowder_green.png, name: Cactus Green }
+    - 351-3: { class: items, src: dyePowder_brown.png, name: Cocoa Beans }
+    - 351-4: { class: items, src: dyePowder_blue.png, name: Lapis Lazuli }
+    - 351-5: { class: items, src: dyePowder_purple.png, name: Purple Dye }
+    - 351-6: { class: items, src: dyePowder_cyan.png, name: Cyan Dye }
+    - 351-7: { class: items, src: dyePowder_silver.png, name: Light Gray Dye }
+    - 351-8: { class: items, src: dyePowder_gray.png, name: Gray Dye }
+    - 351-9: { class: items, src: dyePowder_pink.png, name: Pink Dye }
+    - 351-10: { class: items, src: dyePowder_lime.png, name: Lime Dye }
+    - 351-11: { class: items, src: dyePowder_yellow.png, name: Dandelion Yellow }
+    - 351-12: { class: items, src: dyePowder_lightBlue.png, name: Light Blue Dye }
+    - 351-13: { class: items, src: dyePowder_magenta.png, name: Magenta Dye }
+    - 351-14: { class: items, src: dyePowder_orange.png, name: Orange Dye }
+    - 351-15: { class: items, src: dyePowder_white.png, name: Bone Meal }
+        
+    - 352-0: { class: items, src: bone.png, name: Bone }
+    - 353-0: { class: items, src: sugar.png, name: Sugar }
+    - 354-0: { class: items, src: cake.png, name: Cake }
+    - 355-0: { class: items, src: bed.png, name: Bed }
+    - 356-0: { class: items, src: diode.png, name: Redstone Repeater }
+    - 357-0: { class: items, src: cookie.png, name: Cookie }
+    - 358-0: { class: items, src: map.png, name: Map }
+    - 359-0: { class: items, src: shears.png, name: Shears }
+    - 360-0: { class: items, src: melon.png, name: Melon Slice }
+    - 361-0: { class: items, src: seeds_pumpkin.png, name: Pumpkin Seeds }
+    - 362-0: { class: items, src: seeds_melon.png, name: Melon Seeds }
+    - 363-0: { class: items, src: beefRaw.png, name: Raw Beef }
+    - 364-0: { class: items, src: beefCooked.png, name: Steak }
+    - 365-0: { class: items, src: chickenRaw.png, name: Raw Chicken }
+    - 366-0: { class: items, src: chickenCooked.png, name: Roast Chicken }
+    - 367-0: { class: items, src: rottenFlesh.png, name: Rotten Flesh }
+    - 368-0: { class: items, src: enderPearl.png, name: Ender Pearl }
+    - 369-0: { class: items, src: blazeRod.png, name: Blaze Rod }
+    - 370-0: { class: items, src: ghastTear.png, name: Ghast Tear }
+    - 371-0: { class: items, src: goldNugget.png, name: Gold Nugget }
+    - 372-0: { class: items, src: netherStalkSeeds.png, name: Nether Wart }
+    - 373-0: { class: items, src: potion.png, name: Potion }
+    - 374-0: { class: items, src: potion.png, name: Glass Bottle }
+    - 375-0: { class: items, src: spiderEye.png, name: Spider Eye }
+    - 376-0: { class: items, src: fermentedSpiderEye.png, name: Fermented Spider Eye }
+    - 377-0: { class: items, src: blazePowder.png, name: Blaze Powder }
+    - 378-0: { class: items, src: magmaCream.png, name: Magma Cream }
+    - 379-0: { class: items, src: brewingStand.png, name: Brewing Stand }
+    - 380-0: { class: items, src: cauldron.png, name: Cauldron }
+        
+    - 381-0: { class: items, src: eyeOfEnder.png, name: Eye of Ender }
+    - 382-0: { class: items, src: speckledMelon.png, name: Glistering Melon }
+    
+    #=========================
+    # Eggs
+    #=========================
+    
+    - 383-0: { src: "buffer:defaultEgg", name: Spawn }
+    - 383-50:
+        name: Spawn Creeper
+        src:
+            - src:
+                - "solid:12,159,10,0"
+                - { class: items, src: monsterPlacer.png, action: mask }
+            - src:
+                - "solid:0,0,0,0"
+                - { class: items, src: monsterPlacer_overlay.png, action: mask }
+    - 383-51:
+        name: Spawn Skeleton
+        src:
+            - src:
+                - "solid:184,184,184,0"
+                - { class: items, src: monsterPlacer.png, action: mask }
+            - src:
+                - "solid:64,64,64,0"
+                - { class: items, src: monsterPlacer_overlay.png, action: mask }
+    - 383-52:
+        name: Spawn Spider
+        src:
+            - src:
+                - "solid:50,43,37,0"
+                - { class: items, src: monsterPlacer.png, action: mask }
+            - src:
+                - "solid:147,12,12,0"
+                - { class: items, src: monsterPlacer_overlay.png, action: mask }
+    - 383-53:
+        name: Spawn Giant
+        src: "buffer:defaultEgg"
+    - 383-54:
+        name: Spawn Zombie
+        src:
+            - src:
+                - "solid:0,167,167,0"
+                - { class: items, src: monsterPlacer.png, action: mask }
+            - src:
+                - "solid:106,137,88,0"
+                - { class: items, src: monsterPlacer_overlay.png, action: mask }
+    - 383-55:
+        name: Spawn Slime
+        src:
+            - src:
+                - "solid:77,153,59,0"
+                - { class: items, src: monsterPlacer.png, action: mask }
+            - src:
+                - "solid:110,167,96,0"
+                - { class: items, src: monsterPlacer_overlay.png, action: mask }
+    - 383-56:
+        name: Spawn Ghast
+        src:
+            - src:
+                - "solid:237,237,237,0"
+                - { class: items, src: monsterPlacer.png, action: mask }
+            - src:
+                - "solid:165,165,165,0"
+                - { class: items, src: monsterPlacer_overlay.png, action: mask }
+    - 383-57:
+        name: Spawn Zombie Pigman
+        src:
+            - src:
+                - "solid:223,140,140,0"
+                - { class: items, src: monsterPlacer.png, action: mask }
+            - src:
+                - "solid:67,99,36,0"
+                - { class: items, src: monsterPlacer_overlay.png, action: mask }
+    - 383-58:
+        name: Spawn Enderman
+        src:
+            - src:
+                - "solid:21,21,21,0"
+                - { class: items, src: monsterPlacer.png, action: mask }
+            - src:
+                - "solid:42,42,42,0"
+                - { class: items, src: monsterPlacer_overlay.png, action: mask }
+    - 383-59:
+        name: Spawn Cave Spider
+        src:
+            - src:
+                - "solid:11,63,74,0"
+                - { class: items, src: monsterPlacer.png, action: mask }
+            - src:
+                - "solid:147,12,12,0"
+                - { class: items, src: monsterPlacer_overlay.png, action: mask }
+    - 383-60:
+        name: Spawn Silverfish
+        src:
+            - src:
+                - "solid:105,105,105,0"
+                - { class: items, src: monsterPlacer.png, action: mask }
+            - src:
+                - "solid:42,42,42,0"
+                - { class: items, src: monsterPlacer_overlay.png, action: mask }
+    - 383-61:
+        name: Spawn Blaze
+        src:
+            - src:
+                - "solid:234,170,1,0"
+                - { class: items, src: monsterPlacer.png, action: mask }
+            - src:
+                - "solid:255,252,127,0"
+                - { class: items, src: monsterPlacer_overlay.png, action: mask }
+    - 383-62:
+        name: Spawn Magma Cube
+        src:
+            - src:
+                - "solid:50,0,0,0"
+                - { class: items, src: monsterPlacer.png, action: mask }
+            - src:
+                - "solid:221,221,0,0"
+                - { class: items, src: monsterPlacer_overlay.png, action: mask }
+    - 383-63:
+        name: Spawn Ender Dragon
+        src: "buffer:defaultEgg"
+    - 383-90:
+        name: Spawn Pig
+        src:
+            - src:
+                - "solid:229,157,154,0"
+                - { class: items, src: monsterPlacer.png, action: mask }
+            - src:
+                - "solid:192,87,83,0"
+                - { class: items, src: monsterPlacer_overlay.png, action: mask }
+    - 383-91:
+        name: Spawn Sheep
+        src:
+            - src:
+                - "solid:220,220,220,0"
+                - { class: items, src: monsterPlacer.png, action: mask }
+            - src:
+                - "solid:223,159,159,0"
+                - { class: items, src: monsterPlacer_overlay.png, action: mask }
+    - 383-92:
+        name: Spawn Cow
+        src:
+            - src:
+                - "solid:65,51,36,0"
+                - { class: items, src: monsterPlacer.png, action: mask }
+            - src:
+                - "solid:141,141,141,0"
+                - { class: items, src: monsterPlacer_overlay.png, action: mask }
+    - 383-93:
+        name: Spawn Chicken
+        src:
+            - src:
+                - "solid:153,153,153,0"
+                - { class: items, src: monsterPlacer.png, action: mask }
+            - src:
+                - "solid:223,0,0,0"
+                - { class: items, src: monsterPlacer_overlay.png, action: mask }
+    - 383-94:
+        name: Spawn Squid
+        src:
+            - src:
+                - "solid:32,56,73,0"
+                - { class: items, src: monsterPlacer.png, action: mask }
+            - src:
+                - "solid:98,119,134,0"
+                - { class: items, src: monsterPlacer_overlay.png, action: mask }
+    - 383-95:
+        name: Spawn Wolf
+        src:
+            - src:
+                - "solid:205,201,201,0"
+                - { class: items, src: monsterPlacer.png, action: mask }
+            - src:
+                - "solid:180,153,131,0"
+                - { class: items, src: monsterPlacer_overlay.png, action: mask }
+    - 383-96:
+        name: Spawn Mooshroom
+        src:
+            - src:
+                - "solid:153,14,15,0"
+                - { class: items, src: monsterPlacer.png, action: mask }
+            - src:
+                - "solid:160,160,160,0"
+                - { class: items, src: monsterPlacer_overlay.png, action: mask }
+    - 383-97:
+        name: Spawn Snow Golem
+        src: "buffer:defaultEgg"
+    - 383-98:
+        name: Spawn Ocelot
+        src:
+            - src:
+                - "solid:228,212,119,0"
+                - { class: items, src: monsterPlacer.png, action: mask }
+            - src:
+                - "solid:75,60,46,0"
+                - { class: items, src: monsterPlacer_overlay.png, action: mask }
+    - 383-99:
+        name: Spawn Iron Golem
+        src: "buffer:defaultEgg"
+    - 383-120:
+        name: Spawn Villager
+        src:
+            - src:
+                - "solid:82,57,49,0"
+                - { class: items, src: monsterPlacer.png, action: mask }
+            - src:
+                - "solid:165,122,100,0"
+                - { class: items, src: monsterPlacer_overlay.png, action: mask }
+    
+    #=========================
+    # End Eggs
+    #=========================
+    
+    - 384-0: { class: items, src: expBottle.png, name: Bottle o' Enchanting }
+    - 385-0: { class: items, src: fireball.png, name: Fire Charge }
+    
+    - 386-0: { class: items, src: writingBook.png, name: Book and Quill }
+    - 387-0: { class: items, src: writtenBook.png, name: Written Book }
+    - 388-0: { class: items, src: emerald.png, name: Emerald }
+    
+    - 389-0: { class: items, src: frame.png, name: Item Frame }
+    - 390-0: { class: items, src: flowerPot.png, name: Flower Pot }
+    - 391-0: { class: items, src: carrots.png, name: Carrot }
+    - 392-0: { class: items, src: potato.png, name: Potato }
+    - 393-0: { class: items, src: potatoBaked.png, name: Baked Potato }
+    - 394-0: { class: items, src: potatoPoisonous.png, name: Poisonous Potato }
+    - 395-0: { class: items, src: emptyMap.png, name: Empty Map }
+    - 396-0: { class: items, src: carrotGolden.png, name: Golden Carrot }
+    - 397-0: { class: items, src: skull_skeleton.png, name: Skeleton Head }
+    - 397-0: { class: items, src: skull_wither.png, name: Wither Skeleton Head }
+    - 397-0: { class: items, src: skull_zombie.png, name: Zombie Head }
+    - 397-0: { class: items, src: skull_char.png, name: Human Head }
+    - 397-0: { class: items, src: skull_creeper.png, name: Creaper Head }
+    - 398-0: { class: items, src: carrotOnAStick.png, name: Carrot Stick }
+    - 399-0: { class: items, src: netherStar.png, name: Nether Star }
+    - 400-0: { class: items, src: pumpkinPie.png, name: Pumpkin Pie }
+    
+    - 401-0: { class: items, src: fireworks.png, name: Firework }
+    - 402-0: { class: items, src: fireworksCharge.png, name: Firework Charge }
+    - 403-0: { class: items, src: enchantedBook.png, name: Enchanted Book }
+    - 404-0: { class: items, src: comparator.png, name: Redstone Comparator }
+    - 405-0: { class: items, src: netherbrick.png, name: Nether Brick }
+    - 406-0: { class: items, src: netherquartz.png, name: Quartz }
+    - 407-0: { class: items, src: minecartTnt.png, name: TNT Minecart }
+    - 408-0: { class: items, src: minecartHopper.png, name: Hopper Minecart }
+  
+    - 2256-0: { class: items, src: record_13.png, name: 13 Disc }
+    - 2257-0: { class: items, src: record_cat.png, name: Cat Disc }
+    - 2258-0: { class: items, src: record_blocks.png, name: Blocks Disc }
+    - 2259-0: { class: items, src: record_chirp.png, name: Chirp Disc }
+    - 2260-0: { class: items, src: record_far.png, name: Far Disc }
+    - 2261-0: { class: items, src: record_mall.png, name: Mall Disc }
+    - 2262-0: { class: items, src: record_mellohi.png, name: Mellohi Disc }
+    - 2263-0: { class: items, src: record_stal.png, name: Stal Disc }
+    - 2264-0: { class: items, src: record_strad.png, name: Strad Disc }
+    - 2265-0: { class: items, src: record_ward.png, name: Ward Disc }
+    - 2266-0: { class: items, src: record_11.png, name: 11 Disc }
+        
+        
+    # ===========================================================================
+    # Normal Potions
+    # ===========================================================================
+        
+    - potion-0:
+        - "solid:54,90,192,0"
+        - { class: items, src: potion_contents.png, action: mask }
+        - { class: items, src: potion.png }
+    - potion-1:
+        - "solid:221,94,221,0"
+        - { class: items, src: potion_contents.png, action: mask }
+        - { class: items, src: potion.png }
+    - potion-2:
+        - "solid:143,175,247,0"
+        - { class: items, src: potion_contents.png, action: mask }
+        - { class: items, src: potion.png }
+    - potion-3:
+        - "solid:244,155,111,0"
+        - { class: items, src: potion_contents.png, action: mask }
+        - { class: items, src: potion.png }
+    - potion-4:
+        - "solid:96,148,98,0"
+        - { class: items, src: potion_contents.png, action: mask }
+        - { class: items, src: potion.png }
+    - potion-5:
+        - "solid:255,40,87,0"
+        - { class: items, src: potion_contents.png, action: mask }
+        - { class: items, src: potion.png }
+    - potion-6:
+        - "solid:92,80,125,0"
+        - { class: items, src: potion_contents.png, action: mask }
+        - { class: items, src: potion.png }
+    - potion-7:
+        - "solid:163,40,84,0"
+        - { class: items, src: potion_contents.png, action: mask }
+        - { class: items, src: potion.png }
+    - potion-8:
+        - "solid:110,110,180,0"
+        - { class: items, src: potion_contents.png, action: mask }
+        - { class: items, src: potion.png }
+    - potion-9:
+        - "solid:86,15,62,0"
+        - { class: items, src: potion_contents.png, action: mask }
+        - { class: items, src: potion.png }
+
+    # ===========================================================================
+    # Splash Potions
+    # ===========================================================================
+    
+    - potion-1s:
+        - "solid:221,94,221,0"
+        - { class: items, src: potion_contents.png, action: mask }
+        - { class: items, src: potion_splash.png }
+    - potion-2s:
+        - "solid:143,175,247,0"
+        - { class: items, src: potion_contents.png, action: mask }
+        - { class: items, src: potion_splash.png }
+    - potion-3s:
+        - "solid:244,155,111,0"
+        - { class: items, src: potion_contents.png, action: mask }
+        - { class: items, src: potion_splash.png }
+    - potion-4s:
+        - "solid:96,148,98,0"
+        - { class: items, src: potion_contents.png, action: mask }
+        - { class: items, src: potion_splash.png }
+    - potion-5s:
+        - "solid:255,40,87,0"
+        - { class: items, src: potion_contents.png, action: mask }
+        - { class: items, src: potion_splash.png }
+    - potion-6s:
+        - "solid:92,80,125,0"
+        - { class: items, src: potion_contents.png, action: mask }
+        - { class: items, src: potion_splash.png }
+    - potion-7s:
+        - "solid:163,40,84,0"
+        - { class: items, src: potion_contents.png, action: mask }
+        - { class: items, src: potion_splash.png }
+    - potion-8s:
+        - "solid:110,110,180,0"
+        - { class: items, src: potion_contents.png, action: mask }
+        - { class: items, src: potion_splash.png }
+    - potion-9s:
+        - "solid:86,15,62,0"
+        - { class: items, src: potion_contents.png, action: mask }
+        - { class: items, src: potion_splash.png }
+        
+       

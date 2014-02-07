@@ -1,0 +1,17 @@
+width: 9
+height: 9
+columns: 1
+pngOut: ../src/resources/web_root/img/heart-empty.png
+ftlOut: '-'
+
+classes:
+    - mcjar:
+        baseSrc: %appdata%/.minecraft/bin/minecraft.jar|
+    - icons:
+        class: mcjar
+        width: 9
+        height: 9
+        src: gui/icons.png
+      
+sprites:
+    - emptyHeart: { class: icons, x: 16, y: 0 }
