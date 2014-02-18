@@ -30,6 +30,7 @@ import org.bukkit.event.entity.EntityShootBowEvent;
 import org.bukkit.event.entity.EntityTameEvent;
 import org.bukkit.event.entity.FoodLevelChangeEvent;
 import org.bukkit.inventory.ItemStack;
+import org.bukkit.projectiles.ProjectileSource;
 
 /**
  *
@@ -52,8 +53,12 @@ public final class EntityListenerImpl implements Listener {
         EntityDamageByEntityEvent killEvent = (EntityDamageByEntityEvent) deadEnt.getLastDamageCause();
         Entity killerEnt = killEvent.getDamager();
 
-        if (killerEnt instanceof Projectile)
-            killerEnt = ((Projectile)killerEnt).getShooter();
+        if (killerEnt instanceof Projectile) {
+            ProjectileSource killerSource = ((Projectile)killerEnt).getShooter();
+            if (!(killerSource instanceof Entity)) return;
+
+            killerEnt = (Entity) killerSource;
+        }
 
         if (! (killerEnt instanceof Player)) return;
 

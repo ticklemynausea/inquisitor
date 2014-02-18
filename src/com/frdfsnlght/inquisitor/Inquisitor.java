@@ -20,7 +20,6 @@ import com.frdfsnlght.inquisitor.command.CommandException;
 import com.frdfsnlght.inquisitor.command.CommandProcessor;
 import java.io.File;
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.util.ArrayList;
 import java.util.List;
 import org.bukkit.command.Command;
@@ -28,7 +27,6 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.bukkit.plugin.java.PluginClassLoader;
 
 
 /**
@@ -69,14 +67,14 @@ public class Inquisitor extends JavaPlugin {
         if (Utils.copyFileFromJar("/resources/config.yml", dataFolder, false))
             ctx.sendLog("installed default configuration");
 
-        // copy FreeMarker
-        if (Utils.copyFileFromJar("/resources/freemarker.jar", Global.plugin.getDataFolder(), false))
-            ctx.sendLog("installed FreeMarker");
-
-        // add FreeMarker to class path
-        try {
-            ((PluginClassLoader)WebServer.class.getClassLoader()).addURL((new File(Global.plugin.getDataFolder(), "freemarker.jar")).toURI().toURL());
-        } catch (MalformedURLException mue) {}
+//        // copy FreeMarker
+//        if (Utils.copyFileFromJar("/resources/freemarker.jar", Global.plugin.getDataFolder(), false))
+//            ctx.sendLog("installed FreeMarker");
+//
+//        // add FreeMarker to class path
+//        try {
+//            ((PluginClassLoader)WebServer.class.getClassLoader()).addURL((new File(Global.plugin.getDataFolder(), "freemarker.jar")).toURI().toURL());
+//        } catch (MalformedURLException mue) {}
 
         Config.load(ctx);
 
