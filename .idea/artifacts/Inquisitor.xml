@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Inquisitor">
+    <output-path>$PROJECT_DIR$/out/artifacts/Inquisitor</output-path>
+    <root id="archive" name="Inquisitor.jar">
+      <element id="module-output" name="inquisitor" />
+    </root>
+  </artifact>
+</component>

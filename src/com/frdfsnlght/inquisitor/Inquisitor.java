@@ -18,8 +18,14 @@ package com.frdfsnlght.inquisitor;
 import com.frdfsnlght.inquisitor.api.API;
 import com.frdfsnlght.inquisitor.command.CommandException;
 import com.frdfsnlght.inquisitor.command.CommandProcessor;
+
+import java.beans.IntrospectionException;
 import java.io.File;
 import java.io.IOException;
+import java.lang.reflect.Method;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLClassLoader;
 import java.util.ArrayList;
 import java.util.List;
 import org.bukkit.command.Command;
@@ -27,7 +33,6 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
-
 
 /**
  *
@@ -67,14 +72,14 @@ public class Inquisitor extends JavaPlugin {
         if (Utils.copyFileFromJar("/resources/config.yml", dataFolder, false))
             ctx.sendLog("installed default configuration");
 
-//        // copy FreeMarker
-//        if (Utils.copyFileFromJar("/resources/freemarker.jar", Global.plugin.getDataFolder(), false))
-//            ctx.sendLog("installed FreeMarker");
-//
-//        // add FreeMarker to class path
-//        try {
-//            ((PluginClassLoader)WebServer.class.getClassLoader()).addURL((new File(Global.plugin.getDataFolder(), "freemarker.jar")).toURI().toURL());
-//        } catch (MalformedURLException mue) {}
+        // copy FreeMarker
+        if (Utils.copyFileFromJar("/resources/freemarker.jar", Global.plugin.getDataFolder(), false))
+            ctx.sendLog("installed FreeMarker");
+
+        // add FreeMarker to class path
+        try {
+            this.addURLToWebServerClassLoader((new File(Global.plugin.getDataFolder(), "freemarker.jar")).toURI().toURL());
+        } catch (MalformedURLException mue) {}
 
         Config.load(ctx);
 
@@ -186,4 +191,17 @@ public class Inquisitor extends JavaPlugin {
         return api;
     }
 
+    public static void addURLToWebServerClassLoader(URL url) throws MalformedURLException {
+        URLClassLoader webServerClassLoader = (URLClassLoader) WebServer.class.getClassLoader();
+        Class<URLClassLoader> classLoaderClass = URLClassLoader.class;
+
+        try {
+            Method method = classLoaderClass.getDeclaredMethod("addURL", new Class[]{URL.class});
+            method.setAccessible(true);
+            method.invoke(webServerClassLoader, new Object[]{url});
+        } catch (Throwable t) {
+            t.printStackTrace();
+            throw new MalformedURLException("Error when adding url to WebServer ClassLoader ");
+        }
+    }
 }
