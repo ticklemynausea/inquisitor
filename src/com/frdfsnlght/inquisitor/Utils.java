@@ -258,7 +258,7 @@ public class Utils {
             case MUSHROOM_COW:
                 return "MOOSHROOM";
             default:
-                return type.getEntityClass().getName();
+                return type.getEntityClass().getSimpleName();
         }
     }
 
