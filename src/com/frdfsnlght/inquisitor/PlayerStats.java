@@ -649,12 +649,12 @@ public final class PlayerStats {
                 stackMaps.add(null);
             else {
                 TypeMap stackMap = new TypeMap();
-                stackMap.put("type", stack.getType().toString());
+                stackMap.put("type", stack.getTypeId());
                 stackMap.put("amount", stack.getAmount());
                 stackMap.put("durability", stack.getDurability());
                 MaterialData data = stack.getData();
                 if (data != null)
-                    stackMap.put("data", data.toString());
+                    stackMap.put("data", data.getData());
                 TypeMap ench = new TypeMap();
                 for (Enchantment e : stack.getEnchantments().keySet())
                     ench.put(e.getName(), stack.getEnchantments().get(e));
