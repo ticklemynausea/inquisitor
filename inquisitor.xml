@@ -63,23 +63,23 @@
   <property name="jdk.bin.1.7" value="${jdk.home.1.7}/bin"/>
   <path id="jdk.classpath.1.7">
     <fileset dir="${jdk.home.1.7}">
-      <include name="jre/lib/jfr.jar"/>
+      <include name="jre/lib/management-agent.jar"/>
+      <include name="jre/lib/plugin.jar"/>
+      <include name="jre/lib/charsets.jar"/>
       <include name="jre/lib/rt.jar"/>
       <include name="jre/lib/jce.jar"/>
-      <include name="jre/lib/plugin.jar"/>
-      <include name="jre/lib/jsse.jar"/>
-      <include name="jre/lib/management-agent.jar"/>
       <include name="jre/lib/jfxrt.jar"/>
+      <include name="jre/lib/deploy.jar"/>
+      <include name="jre/lib/jfr.jar"/>
+      <include name="jre/lib/jsse.jar"/>
       <include name="jre/lib/javaws.jar"/>
       <include name="jre/lib/resources.jar"/>
-      <include name="jre/lib/charsets.jar"/>
-      <include name="jre/lib/deploy.jar"/>
-      <include name="jre/lib/ext/sunjce_provider.jar"/>
-      <include name="jre/lib/ext/dnsns.jar"/>
       <include name="jre/lib/ext/sunec.jar"/>
+      <include name="jre/lib/ext/dnsns.jar"/>
       <include name="jre/lib/ext/sunpkcs11.jar"/>
-      <include name="jre/lib/ext/zipfs.jar"/>
       <include name="jre/lib/ext/localedata.jar"/>
+      <include name="jre/lib/ext/zipfs.jar"/>
+      <include name="jre/lib/ext/sunjce_provider.jar"/>
     </fileset>
   </path>
   
@@ -132,18 +132,20 @@
   
   <target name="init.artifacts">
     <property name="artifacts.temp.dir" value="${basedir}/__artifacts_temp"/>
-    <property name="artifact.output.inquisitor" value="${basedir}/out/artifacts/Inquisitor"/>
+    <property name="artifact.output.inquisitor" value="${basedir}/out/artifacts/inquisitor"/>
     <mkdir dir="${artifacts.temp.dir}"/>
-    <property name="temp.jar.path.Inquisitor.jar" value="${artifacts.temp.dir}/Inquisitor.jar"/>
+    <property name="temp.jar.path.inquisitor.jar" value="${artifacts.temp.dir}/inquisitor.jar"/>
   </target>
   
-  <target name="artifact.inquisitor" depends="init.artifacts, compile.module.inquisitor" description="Build &#39;Inquisitor&#39; artifact">
-    <property name="artifact.temp.output.inquisitor" value="${artifacts.temp.dir}/Inquisitor"/>
+  <target name="artifact.inquisitor" depends="init.artifacts, compile.module.inquisitor" description="Build &#39;inquisitor&#39; artifact">
+    <property name="artifact.temp.output.inquisitor" value="${artifacts.temp.dir}/inquisitor"/>
     <mkdir dir="${artifact.temp.output.inquisitor}"/>
-    <jar destfile="${temp.jar.path.Inquisitor.jar}" duplicate="preserve" filesetmanifest="mergewithoutmain">
+    <jar destfile="${temp.jar.path.inquisitor.jar}" duplicate="preserve" filesetmanifest="mergewithoutmain">
       <zipfileset dir="${inquisitor.output.dir}"/>
+      <zipfileset file="${basedir}/src/resources/snakeyaml-1.13.jar" prefix="resources"/>
+      <zipfileset file="${basedir}/src/resources/freemarker.jar" prefix="resources"/>
     </jar>
-    <copy file="${temp.jar.path.Inquisitor.jar}" tofile="${artifact.temp.output.inquisitor}/Inquisitor.jar"/>
+    <copy file="${temp.jar.path.inquisitor.jar}" tofile="${artifact.temp.output.inquisitor}/inquisitor.jar"/>
   </target>
   
   <target name="build.all.artifacts" depends="artifact.inquisitor" description="Build all artifacts">
