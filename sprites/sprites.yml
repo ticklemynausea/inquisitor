@@ -48,11 +48,11 @@ sprites:
     - 5-0: { class: wiki, src: /8/83/Wooden_Planks.gif!0, name: Oak Planks }
     - 5-1: { class: wiki, src: /8/83/Wooden_Planks.gif!1, name: Pine Planks }
     - 5-2: { class: wiki, src: /8/83/Wooden_Planks.gif!2, name: Birch Planks }
-    - 5-3: { class: wiki, src: /8/83/Wooden_Planks.gif!3, name: Redwood Planks }
+    - 5-3: { class: wiki, src: /8/83/Wooden_Planks.gif!3, name: Jungle Planks }
     - 6-0: { class: blocks, src: sapling_oak.png, name: Oak Sapling }
     - 6-1: { class: blocks, src: sapling_spruce.png, name: Pine Sapling }
     - 6-2: { class: blocks, src: sapling_birch.png, name: Birch Sapling }
-    - 6-3: { class: blocks, src: sapling_jungle.png, name: Redwood Sapling }
+    - 6-3: { class: blocks, src: sapling_jungle.png, name: Jungle Sapling }
     - 6-4: { class: wiki, src: /8/8a/Acacia_Sapling.png, name: Acacia Sapling }
     - 6-5: { class: wiki, src: /2/2f/Dark_Oak_Sapling.png, name: Dark Oak Sapling }
     - 7-0: { class: wiki, src: /e/ee/Bedrock.png, name: Bedrock }
@@ -74,7 +74,7 @@ sprites:
     - 18-0: { class: wiki, src: /7/7b/Leaves.gif!0, name: Oak Leaves }
     - 18-1: { class: wiki, src: /7/7b/Leaves.gif!1, name: Pine Leaves }
     - 18-2: { class: wiki, src: /7/7b/Leaves.gif!2, name: Birch Leaves }
-    - 18-3: { class: wiki, src: /7/7b/Leaves.gif!3, name: Redwood Leaves }
+    - 18-3: { class: wiki, src: /7/7b/Leaves.gif!3, name: Jungle Leaves }
     - 19-0: { class: wiki, src: /a/a0/Sponge.png, name: Sponge }
     - 20-0: { class: wiki, src: /1/15/Glass.png, name: Glass }
     - 21-0: { class: wiki, src: /c/cf/Lapis_Lazuli_%28Ore%29.png, name: Lapis Lazuli Ore }
@@ -152,7 +152,7 @@ sprites:
     - 50-0: { class: blocks, src: torch_on.png, name: Torch }
     - 51-0: { class: wiki, src: /3/30/Fire.png, name: Fire }
     - 52-0: { class: wiki, src: /2/2d/Monster_Spawner.png, name: Spawner }
-    - 53-0: { class: wiki, src: /f/f9/Stairs.gif!0, name: Wooden Stairs }
+    - 53-0: { class: wiki, src: /5/5e/Wooden_Stairs.png, name: Oak Wood Stairs }
     - 54-0: { class: wiki, src: /b/b3/Chest.png, name: Chest }
     - 55-0: { class: wiki, src: /1/18/Redstone_%28Wire%2CInventory%29.png, name: Redstone Wire }
     - 56-0: { class: wiki, src: /9/9d/Diamond_%28Ore%29.png, name: Diamond Ore }
@@ -166,7 +166,7 @@ sprites:
     - 64-0: { class: items, src: door_wood.png, name: Wooden Door }
     - 65-0: { class: blocks, src: ladder.png, name: Ladder }
     - 66-0: { class: blocks, src: rail_normal.png, name: Rail }
-    - 67-0: { class: wiki, src: /f/f9/Stairs.gif!4, name: Cobblestone Stairs }
+    - 67-0: { class: wiki, src: /f/f5/Cobblestone_Stairs.png, name: Cobblestone Stairs }
     - 68-0: { class: wiki, src: /c/cc/Wall_Sign.png, name: Wall Sign }
     - 69-0: { class: wiki, src: /c/c6/Lever.png, name: Lever }
     - 70-0: { class: wiki, src: /a/a4/Stone_Pressure_Plate.png, name: Stone Pressure Plate }
@@ -233,13 +233,13 @@ sprites:
     - 105-0: { class: wiki, src: /7/7c/Seed_Stem.png, name: Melon Stem }
     - 106-0: { class: wiki, src: /f/ff/Vine.png, name: Vines }
     - 107-0: { class: wiki, src: /6/62/Fence_Gate_%28Closed%29.png, name: Fence Gate }
-    - 108-0: { class: wiki, src: /f/f9/Stairs.gif!5, name: Brick Stairs }
-    - 109-0: { class: wiki, src: /f/f9/Stairs.gif!6, name: Stone Brick Stairs }
+    - 108-0: { class: wiki, src: /b/bf/Brick_Stairs.png, name: Brick Stairs }
+    - 109-0: { class: wiki, src: /8/86/Stone_Brick_Stairs.png, name: Stone Brick Stairs }
     - 110-0: { class: wiki, src: /1/15/Mycelium.png, name: Mycelium }
     - 111-0: { class: wiki, src: /4/43/Lily_Pad.png, name: Lily Pad }
     - 112-0: { class: wiki, src: /6/62/Nether_Brick.png, name: Nether Brick }
     - 113-0: { class: wiki, src: /3/30/Nether_Brick_Fence.png, name: Nether Brick Fence }
-    - 114-0: { class: wiki, src: /f/f9/Stairs.gif!7, name: Nether Brick Stairs }
+    - 114-0: { class: wiki, src: /b/b2/Nether_Brick_Stairs.png, name: Nether Brick Stairs }
     - 115-0: { class: wiki, src: /4/43/Nether_Wart.png, name: Nether Wart }
     - 116-0: { class: wiki, src: /c/ca/Enchantment_Table.png, name: Enchanctment Table }
     - 117-0: { class: wiki, src: /f/fa/Brewing_Stand.png, name: Brewing Stand }
@@ -263,15 +263,15 @@ sprites:
     - 126-4: { class: wiki, src: /b/b5/Acacia_Wood_Slab.png, name: Acacia Wood Slab }
     - 126-5: { class: wiki, src: /f/f6/Dark_Oak_Wood_Slab.png, name: Dark Oak Wood Slab }
     - 127-0: { class: wiki, src: /a/ad/Cocoa_Plant.png, name: Cocoa Plant }
-    - 128-0: { class: wiki, src: /f/f9/Stairs.gif!8, name: Sandstone Stairs }
+    - 128-0: { class: wiki, src: /0/01/Sandstone_Stairs.png, name: Sandstone Stairs }
     - 129-0: { class: wiki, src: /3/3d/Emerald_Ore2.png, name: Emerald Ore }
     - 130-0: { class: wiki, src: /f/f0/Ender_Chest.png, name: Ender Chest }
     - 131-0: { class: wiki, src: /c/c0/Tripwire_Hook.png, name: Tripwire Hook }
     - 132-0: { class: wiki, src: /f/fa/Tripwire.png, name: Tripwire }
     - 133-0: { class: wiki, src: /7/7d/Block_of_Emerald.png, name: Emerald Block }
-    - 134-0: { class: wiki, src: /f/f9/Stairs.gif!1, name: Pine Wooden Stairs }
-    - 135-0: { class: wiki, src: /f/f9/Stairs.gif!2, name: Birch Wooden Stairs }
-    - 136-0: { class: wiki, src: /f/f9/Stairs.gif!3, name: Redwood Wooden Stairs }
+    - 134-0: { class: wiki, src: /e/e5/Spruce_Wood_Stairs.png, name: Spruce Wood Stairs }
+    - 135-0: { class: wiki, src: /5/52/Birch_Wood_Stairs.png, name: Birch Wood Stairs }
+    - 136-0: { class: wiki, src: /f/f0/Jungle_Wood_Stairs.png, name: Jungle Wood Stairs }
     - 137-0: { class: wiki, src: /0/07/Command_Block.png, name: Command Block }
     - 138-0: { class: wiki, src: /2/20/Beacon_Block.png, name: Beacon }
     - 139-0: { class: wiki, src: /7/79/Mossy_Cobblestone_Wall.png, name: Mossy Cobblestone Wall }
@@ -339,6 +339,8 @@ sprites:
     - 161-1: { class: wiki, src: /2/22/Dark_Oak_Leaves.png, name: Dark Oak Leaves }
     - 162-0: { class: wiki, src: /6/61/Dark_Oak_Wood.png, name: Dark Oak Wood }
     - 162-1: { class: wiki, src: /5/55/Acacia_Wood.png, name: Acacia Wood }
+    - 163-0: { class: wiki, src: /0/0d/Acacia_Wood_Stairs.png, name: Acacia Wood Stairs }
+    - 164-0: { class: wiki, src: /3/3d/Dark_Oak_Wood_Stairs.png, name: Dark Oak Stairs }
     - 170-0: { class: wiki, src: /a/ad/Hay_Block.png, name: Hay Block }
     - 171-0: { class: wiki, src: /8/8a/White_Carpet.png, name: White Carpet }
     - 171-1: { class: wiki, src: /6/6d/Orange_Carpet.png, name: Orange Carpet }
@@ -431,8 +433,8 @@ sprites:
     - 316-0: { class: items, src: gold_leggings.png, name: Gold Leggings }
     - 317-0: { class: items, src: gold_boots.png, name: Gold Boots }
     - 318-0: { class: items, src: flint.png, name: Flint }
-    - 319-0: { class: items, src: porkchop_raw.png, name: _raw Porkchop }
-    - 320-0: { class: items, src: porkchop_cooked.png, name: _cooked Porkchop }
+    - 319-0: { class: items, src: porkchop_raw.png, name: Raw Porkchop }
+    - 320-0: { class: items, src: porkchop_cooked.png, name: Cooked Porkchop }
     - 321-0: { class: items, src: painting.png, name: Painting }
     - 322-0: { class: items, src: apple_golden.png, name: Golden Apple }
     - 323-0: { class: items, src: sign.png, name: Sign }
@@ -495,9 +497,9 @@ sprites:
     - 360-0: { class: items, src: melon.png, name: Melon Slice }
     - 361-0: { class: items, src: seeds_pumpkin.png, name: Pumpkin Seeds }
     - 362-0: { class: items, src: seeds_melon.png, name: Melon Seeds }
-    - 363-0: { class: items, src: beef_raw.png, name: _raw Beef }
+    - 363-0: { class: items, src: beef_raw.png, name: Raw Beef }
     - 364-0: { class: items, src: beef_cooked.png, name: Steak }
-    - 365-0: { class: items, src: chicken_raw.png, name: _raw Chicken }
+    - 365-0: { class: items, src: chicken_raw.png, name: Raw Chicken }
     - 366-0: { class: items, src: chicken_cooked.png, name: Roast Chicken }
     - 367-0: { class: items, src: rotten_flesh.png, name: Rotten Flesh }
     - 368-0: { class: items, src: ender_pearl.png, name: Ender Pearl }
@@ -796,7 +798,7 @@ sprites:
     - 2264-0: { class: items, src: record_strad.png, name: Strad Disc }
     - 2265-0: { class: items, src: record_ward.png, name: Ward Disc }
     - 2266-0: { class: items, src: record_11.png, name: 11 Disc }
-    - 2267-0: { class: items, src: record_11.png, name: Wait Disc }
+    - 2267-0: { class: items, src: record_wait.png, name: Wait Disc }
         
         
     # ===========================================================================
